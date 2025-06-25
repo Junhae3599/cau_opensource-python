@@ -8,15 +8,15 @@ class BRKiosk:
     }
 
     def __init__(self):
-        self.menu_type = ""
-        self.size = 0
-        self.place = ""
-        self.icecream_list = []
-        self.spoon = 0
-        self.dryice = 0
-        self.order_list = []
-        self.total_price = 0
-        self.number = 1
+        self.menu_type = ""        # 선택한 메뉴 종류 (아이스크림, 케이크 등)
+        self.size = 0              # 아이스크림 사이즈 (숫자: 1 ~ 6)  
+        self.place = ""            # 매장 / 포장 여부
+        self.icecream_list = []    # 아이스크림 맛 리스트
+        self.spoon = 0             # 스푼 개수
+        self.dryice = 0            # 드라이아이스 덩이 수
+        self.order_list = []       # 주문 내역 저장
+        self.total_price = 0       # 총 결제 금액
+        self.number = 1            # 수령번호 (고정값: 001)
 
     def safe_int_input(self, prompt):
         while True:
